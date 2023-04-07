@@ -1,0 +1,165 @@
+1. Веќе имав креирано профил на github
+
+2. Беше именувана како main, сега е променето во master
+
+3. Repositories, New, Create a new repository, Repository name: SI_2023_lab1_216031
+
+4. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031
+$ git init
+Initialized empty Git repository in C:/Users/Jana/Desktop/SI_lab1/SI_2023_lab1_216031/.git/
+Најпрво со командата cd Desktop влегувам на Desktop, потоа со cd SI_lab1 влегувам во фолдерот именуван SI_lab1, 
+потоа во тој фолдер го креирам фолдерот SI_2023_lab1_216031 со командата mkdir, па со командата cd влегувам во фолдерот 
+SI_2023_lab1_216031 и на крај правам git init за иницијализација.
+
+5. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git remote add origin https://github.com/JanaJankoska/SI_2023_lab1_216031.git
+
+6. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ touch README.md
+touch командата се користи за да креирам нов фајл README.md
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ nano README.md
+со nano командата пишував внатре
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git add README.md
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) ea8d8e4] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+7. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ touch SILab1.java
+touch командата се користи за да креирам нов фајл SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ nano SILab1.java
+со nano командата пишував внатре
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git add SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git commit -m "Add java class"
+[master 981881a] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.javagit 
+
+8. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git push -u origin master
+
+9. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git branch bug1
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git branch bug2
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git branch bug3
+
+10. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+11. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug1)
+$ nano SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug1)
+$ git add SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 a171ca4] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+13. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug2)
+$ nano SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug2)
+$ git add SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 20b3f73] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+15. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ nano SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git add SILab1.java
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+[bug3 bcb5962] Fix method sumEvenNumbers
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+16. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git push origin --all
+
+17. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+18. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git merge bug1
+Updating 981881a..a171ca4
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+19. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git push origin --all
+
+20. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+21. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git push origin --all
+
+22. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+23. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git rebase master
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git push --force origin bug3
+
+24. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (bug3)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+25. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git merge bug3
+Updating b87c40d..826b0d5
+Fast-forward
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+26. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git push origin --all
+
+27. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git log
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ touch logs.txt
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ nano logs.txt
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ touch 216031.txt
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ nano 216031.txt
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git add --all
+Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/Softversko_lab1/SI_2023_lab1_216031 (master)
+$ git commit -m "Final commit"
+
+28. Jana@DESKTOP-MQVSP5U MINGW64 ~/Desktop/SI_lab1/SI_2023_lab1_216031 (master)
+$ git push origin --all
+
+
+

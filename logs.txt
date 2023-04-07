@@ -1,0 +1,23 @@
+commit 826b0d5017af87ca599594041ffdea229a12524f (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: JanaJankoska <janajankoska43@gmail.com>
+Date:   Fri Apr 7 23:12:31 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit b87c40d1825119f03c9e073efe9cc89fb8d8223f
+Merge: a171ca4 20b3f73
+Author: JanaJankoska <janajankoska43@gmail.com>
+Date:   Fri Apr 7 23:13:56 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 20b3f732d5cee4b98341e8fcfd49ea650b2252c8 (origin/bug2, bug2)
+Author: JanaJankoska <janajankoska43@gmail.com>
+Date:   Fri Apr 7 23:10:22 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit a171ca4b04c14ddb77622c5e1d6c76188be32a25 (origin/bug1, bug1)
+Author: JanaJankoska <janajankoska43@gmail.com>
+Date:   Fri Apr 7 23:08:31 2023 +0200
+:
